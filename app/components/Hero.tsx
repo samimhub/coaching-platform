@@ -5,21 +5,22 @@ import { FaArrowUpRightFromSquare, FaChevronRight } from "react-icons/fa6";
 
 function Hero() {
   return (
-  <section className="flex justify-evenly items-center flex-col lg:flex-row 
+  <section className="flex justify-evenly items-center flex-col gap-12 lg:flex-row 
                       lg:py-14">
     {/*Left*/}
-    <div className="flex justify-center items-center lg:shadow-lg px-32 py-8">
+    <div className="flex flex-col justify-center items-center gap-8 text-xl shadow-lg lg:px-32 lg:py-8">
         <Image
           src="/personal_photo.jpg"
           alt="bg"
           width={260}
           height={260}
-          className="rounded-full " />
+          className="rounded-full translate-y-6 " />
+          <p className="p-4">Haider-Ul Isalm,B.Tech(cse),IIT Guwahati(cs minor)</p>
       </div>
       {/*Right*/}
         <div className=" flex justify-center items-center flex-col flex-wrap gap-6 mb-5">
-          <h1 className=" text-4xl lg:text-5xl text-center">Welcome to Your Education Journey</h1>
-          <h1 className="text-2xl mt-5">"Your Success, Our Commitment"
+          <h1 className="hidden lg:flex text-4xl lg:text-5xl text-center">Welcome to Your Education Journey</h1>
+          <h1 className="text-3xl lg:text-2xl mt-5">"Your Success, Our Commitment"
 
           </h1>
           <div className="flex items-center gap-2">
