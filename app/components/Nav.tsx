@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { GrMenu } from "react-icons/gr"
 
 
@@ -15,7 +16,11 @@ function Nav({ openNav}: Props) {
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">About</a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Services</a>
                 <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Contact</a>
+                <Link href='/sign-in'>
                 <button className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">Login</button>
+                </Link>
+                
+               
                  
               </div>
               <GrMenu onClick={openNav} className="cursor-pointer text-4xl ml- lg:hidden "/>
